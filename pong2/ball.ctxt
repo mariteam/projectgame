@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=label
+comment0.target=ball(keepoints)
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ ball\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ resetgame()
+comment3.params=
+comment3.target=void\ move()
+comment4.params=
+comment4.target=void\ start()
+comment5.params=
+comment5.target=void\ wallbounce()
+comment6.params=
+comment6.target=void\ paddlebounce()
+comment7.params=
+comment7.target=void\ points()
+numComments=8
