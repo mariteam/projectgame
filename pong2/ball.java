@@ -29,6 +29,7 @@ public class ball extends Actor
         points();
         resetgame();
         start();
+        ballbounce();
 }
     public void resetgame(){
     if (humanpoint==10){
@@ -38,6 +39,7 @@ public class ball extends Actor
         Greenfoot.setWorld(new pong()); 
     }
     }
+    
     public void move(){
     setLocation(getX() + xSpeed, getY() + ySpeed);
     }
@@ -59,9 +61,19 @@ public void wallbounce(){
     {
       xSpeed = (1+xSpeed)*-1; 
     }
+    if(getY() >=getWorld().getHeight() - getImage().getHeight()/2)
+    {
+      xSpeed = (1+xSpeed)*-1; 
+    }
+    if(getY() <= 0 + getImage().getHeight()/2)
+    {
+      xSpeed = (1+xSpeed)*-1; 
+    }
     
     
 }
+
+
 public void paddlebounce()
 {
     Actor hpaddle = getOneIntersectingObject(humanpaddle.class);
@@ -104,7 +116,18 @@ public void points(){
       
     
     
+    
 }
+public void ballbounce()
+{
+    Actor pongball = getOneIntersectingObject(ball.class);
+    
+   
+    if( pongball != null){
+        ySpeed = (1+ySpeed)*-1;
+        xSpeed = (1+xSpeed)/-1;
+    }
+}  
 }
 
 

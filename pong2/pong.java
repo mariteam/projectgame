@@ -19,7 +19,8 @@ public class pong extends World
         super(600, 800, 1);
         keepoints label = new keepoints("Press ENTER to start!!!");
        
-        addObject(new ball(label), 300, 400);
+        addObject(new ball(label), 200, 400);
+        addObject(new ball(label), 400, 400);
         addObject(new humanpaddle(), 300, 780);
         addObject(new keepaddle(), 300, 20);
         
